@@ -4,6 +4,19 @@ function AccordionHome() {
     <Accordion defaultActiveKey="0">
       <Accordion.Item eventKey="0">
         <Accordion.Header>
+          Tiempo requerido para el desarrollo de la actividad
+        </Accordion.Header>
+        <Accordion.Body>
+          <li>
+            Revisar &nbsp;
+            <a href="https://umb.instructure.com/courses/58388/pages/plan-de-actividades-de-aprendizaje" target="_blank" rel="noreferrer">
+               Plan de formación y Cronograma de Actividades
+            </a>
+          </li>
+        </Accordion.Body>
+      </Accordion.Item>
+      <Accordion.Item eventKey="1">
+        <Accordion.Header>
           ¿Qué competencias desarrollará a través de esta actividad?
         </Accordion.Header>
         <Accordion.Body>
@@ -15,7 +28,7 @@ function AccordionHome() {
           <li>Desarrollar habilidades en HTML y CSS.</li>
         </Accordion.Body>
       </Accordion.Item>
-      <Accordion.Item eventKey="1">
+      <Accordion.Item eventKey="2">
         <Accordion.Header>¿Qué debe hacer? (paso a paso)</Accordion.Header>
         <Accordion.Body>
           <li>
@@ -37,12 +50,12 @@ function AccordionHome() {
           </li>
           <li>
             Pruebas y ajustes: Realice pruebas de usabilidad y ajuste el diseño
-            según sus comentarios.{" "}
+            según sus comentarios.
           </li>
         </Accordion.Body>
       </Accordion.Item>
 
-      <Accordion.Item eventKey="2">
+      <Accordion.Item eventKey="3">
         <Accordion.Header>¿Qué debe entregar? (entregable)</Accordion.Header>
         <Accordion.Body>
           <li>
@@ -62,7 +75,7 @@ function AccordionHome() {
           </p>
         </Accordion.Body>
       </Accordion.Item>
-      <Accordion.Item eventKey="3">
+      <Accordion.Item eventKey="4">
         <Accordion.Header>
           ¿A qué recursos acudir para el desarrollo de la actividad? (recursos)
         </Accordion.Header>
@@ -73,7 +86,7 @@ function AccordionHome() {
           </li>
           <li>Herramientas de diseño: Figma, Adobe XD.</li>
           <li>
-            {" "}
+            
             Recursos en línea: MDN Web Docs para HTML y CSS, sitios de
             referencia como Awwwards y Behance para inspiración.
           </li>

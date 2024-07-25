@@ -1,4 +1,5 @@
 .App {
+  font-family: "Roboto", sans-serif;
   margin: 0;
   padding: 0;
   width: 100vw;
@@ -13,8 +14,8 @@
 }
 
 .sidebar {
-  background-color: red;
-  flex: 0 0 10%;
+  background-color: #9a9a9a;
+  flex: 0 0 55px;
 }
 
 .content {
@@ -24,8 +25,8 @@
 }
 
 .top {
-  background-color: purple;
-  flex: 0 0 10%;
+  background-color: #bbbbbb;
+  flex: 0 0 72px;
 }
 
 .bottom {
@@ -34,31 +35,61 @@
 }
 
 .bottom-left {
-  background-color: pink;
+  background-color: #cccccc;
   width: 192px;
   flex-shrink: 0;
+  height: calc(100vh - 72px);
 }
 
 .bottom-right {
-  background-color: black;
-  flex: 1;
+  background-color: #eeeeee;
+  flex: 1 1;
+  height: calc(100vh - 72px);
+  display: flex;
+  overflow-y: auto;
+  justify-content: center;
+  align-items: center;
+}
+.cardHome.card {
+  width: 90%;
+}
+
+.accordionImage {
+  height: 170px;
+  overflow: hidden;
+}
+.accordionImage img {
+  display: block;
+  width: 100%;
+  position: relative;
+  top: -190px;
+}
+
+.accordion-button:not(.collapsed) {
+  background: #941916 !important;
+  color: white !important;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2) !important;
+  font-weight: bold;
+}
+
+button.accordion-button.collapsed:hover {
+  background: #ff8b8e !important;
+  color: white;
+  font-weight: bold;
 }
 
 .sendHomework {
   margin: 20px 0px;
   border: none;
   height: 40px;
-  width: 100%;
-  border-radius: 5%;
-}
-
-.sendHomework:hover {
-  background: rgb(168, 138, 138);
-}
-
-.accordion-button:not(.collapsed),
-.sendHomework {
+  width: 250px;
+  border-radius: 5px;
   background: #941916 !important;
   color: white !important;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2) !important;
+}
+
+.sendHomework:hover {
+  background: #ff8b8e !important;
+  font-weight: bold;
 }

@@ -4,6 +4,12 @@ import AccordionHome from "./accordion";
 function CardHome() {
   return (
     <Card className="cardHome">
+      <div className="accordionImage">
+        <Card.Img
+          variant="top"
+          src="https://umb.instructure.com/courses/58388/files/9635463/preview"
+        />
+      </div>
       <Card.Body>
         <Card.Title>
           <strong> Módulo 1 - </strong>
@@ -15,8 +21,7 @@ function CardHome() {
         </Card.Subtitle>
         <div></div>
         <AccordionHome></AccordionHome>
-        <button className="sendHomework"/> 
-         
+        <button className="sendHomework">Entregar Tarea</button>
       </Card.Body>
     </Card>
   );
