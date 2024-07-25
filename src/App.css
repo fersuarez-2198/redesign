@@ -1,38 +1,64 @@
 .App {
-  text-align: center;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.mainContainer {
+  display: flex;
+  width: 100vw;
+  flex-direction: row;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.sidebar {
+  background-color: red;
+  flex: 0 0 10%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.content {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  flex: 1;
 }
 
-.App-link {
-  color: #61dafb;
+.top {
+  background-color: purple;
+  flex: 0 0 10%;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.bottom {
+  display: flex;
+  flex: 1;
+}
+
+.bottom-left {
+  background-color: pink;
+  width: 192px;
+  flex-shrink: 0;
+}
+
+.bottom-right {
+  background-color: black;
+  flex: 1;
+}
+
+.sendHomework {
+  margin: 20px 0px;
+  border: none;
+  height: 40px;
+  width: 100%;
+  border-radius: 5%;
+}
+
+.sendHomework:hover {
+  background: rgb(168, 138, 138);
+}
+
+.accordion-button:not(.collapsed),
+.sendHomework {
+  background: #941916 !important;
+  color: white !important;
+  box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2) !important;
 }
