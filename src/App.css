@@ -18,6 +18,14 @@
   flex: 0 0 55px;
 }
 
+.sidebar,
+.top,
+.bottom-left {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
 .content {
   display: flex;
   flex-direction: column;
@@ -50,6 +58,10 @@
   justify-content: center;
   align-items: center;
 }
+
+.containerCard {
+  width: 90%;
+}
 .cardHome.card {
   width: 90%;
 }
@@ -76,6 +88,10 @@ button.accordion-button.collapsed:hover {
   background: #ff8b8e !important;
   color: white;
   font-weight: bold;
+}
+
+.rubrica {
+  width: 100%;
 }
 
 .sendHomework {

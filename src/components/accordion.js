@@ -1,4 +1,5 @@
 import Accordion from "react-bootstrap/Accordion";
+import ImgRubrica from "../assets/rubrica.png"
 function AccordionHome() {
   return (
     <Accordion defaultActiveKey="0">
@@ -90,6 +91,14 @@ function AccordionHome() {
             Recursos en línea: MDN Web Docs para HTML y CSS, sitios de
             referencia como Awwwards y Behance para inspiración.
           </li>
+        </Accordion.Body>
+      </Accordion.Item>
+      <Accordion.Item eventKey="5">
+        <Accordion.Header>
+          Rúbrica de evaluación
+        </Accordion.Header>
+        <Accordion.Body>
+          <img src={ImgRubrica} alt="" className="rubrica"></img>
         </Accordion.Body>
       </Accordion.Item>
     </Accordion>

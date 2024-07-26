@@ -4,16 +4,18 @@ import "bootstrap/dist/css/bootstrap.min.css";
 function App() {
   return (
     <div className="App">
-      <div class="mainContainer">
-        <div class="sidebar"></div>
-        <div class="content">
-            <div class="top"></div>
-            <div class="bottom">
-                <div class="bottom-left"></div>
-                <div class="bottom-right"><CardHome></CardHome></div>
+      <div className="mainContainer">
+        <div className="sidebar">Sidebar actual</div>
+        <div className="content">
+          <div className="top">Breadcrumb actual</div>
+          <div className="bottom">
+            <div className="bottom-left">Menú de asignatura actual</div>
+            <div className="bottom-right">
+              <CardHome></CardHome>
             </div>
+          </div>
         </div>
-    </div>
+      </div>
     </div>
   );
 }
